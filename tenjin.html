@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天神購物 · 附近百貨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+TC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #121b31;
+    --bg-deep: #0c1220;
+    --paper: #f4efdd;
+    --ink: #241e14;
+    --ink-soft: #4a4331;
+    --cream: #e9e2cd;
+    --muted: #8593b3;
+    --gold: #c89b3c;
+    --gold-bright: #e0b95a;
+    --vermillion: #bd4527;
+    --font-display: 'Shippori Mincho', serif;
+    --font-body: 'Noto Sans TC', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --fs-base: 16px;
+    --fs-sm: 14px;
+    --fs-xs: 13px;
+    --fs-2xs: 12px;
+  }
+
+  * { box-sizing: border-box; margin:0; padding:0; }
+
+  body{
+    background: var(--bg);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .hero{
+    position: relative;
+    padding: 36px 24px 32px;
+    text-align:center;
+    background:
+      radial-gradient(ellipse 120% 80% at 50% -10%, rgba(200,155,60,0.16), transparent 60%),
+      linear-gradient(180deg, var(--bg-deep), var(--bg) 70%);
+  }
+  .back{
+    display:inline-block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.12em;
+    color: var(--gold-bright);
+    text-decoration:none;
+    border: 1px solid rgba(200,155,60,0.35);
+    border-radius: 100px;
+    padding: 6px 14px;
+    margin-bottom: 22px;
+  }
+  .back:hover{ background: rgba(200,155,60,0.12); }
+  .hero-eyebrow{
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.32em;
+    color: var(--gold-bright);
+    text-transform: uppercase;
+  }
+  .hero-title{
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(32px, 9vw, 52px);
+    letter-spacing: 0.06em;
+    margin: 14px 0 6px;
+    color: var(--paper);
+  }
+  .hero-title small{
+    display:block;
+    font-size: 0.36em;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    color: var(--gold-bright);
+    margin-top: 10px;
+  }
+  .hero-rule{
+    width: 64px; height: 2px;
+    margin: 22px auto 0;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  main{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 8px 20px 64px;
+  }
+
+  .card{
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 4px;
+    box-shadow: 0 18px 40px -18px rgba(0,0,0,0.55);
+    padding: 28px 24px 8px;
+  }
+
+  .story{
+    margin-bottom: 28px;
+  }
+  .story h2{
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .story h2 span{
+    display:block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--vermillion);
+    margin-bottom: 4px;
+  }
+  .story p{
+    color: var(--ink-soft);
+    font-size: var(--fs-sm);
+    margin-bottom: 10px;
+  }
+  .story a{
+    color: var(--vermillion);
+    text-underline-offset: 3px;
+  }
+
+  .visit{
+    margin-top: 22px;
+    background: #0a0f1c;
+    border: 1px solid rgba(200,155,60,0.3);
+    border-radius: 4px;
+    padding: 16px 18px;
+    font-family: var(--font-mono);
+  }
+  .visit h3{
+    color: var(--gold-bright);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .visit p{
+    font-size: var(--fs-xs);
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .sign{
+    margin-top: 36px;
+    text-align:center;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.3em;
+    color: #3a5586;
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <a class="back" href="index.html#day3">← 回行程表 · Day 3</a>
+  <div class="hero-eyebrow">Tenjin Shopping</div>
+  <h1 class="hero-title">天神購物<small>附近百貨怎麼選</small></h1>
+  <div class="hero-rule"></div>
+</header>
+
+<main>
+  <div class="card">
+    <section class="story">
+      <h2><span>01</span>先搞懂天神怎麼連</h2>
+      <p>天神的主軸是南北向的渡辺通り。沿路由北到南大致是：<strong>mina 天神 → PARCO → 福岡三越 → 大丸</strong>。西側きらめき通り則是<strong>岩田屋本店</strong>。</p>
+      <p>這些館幾乎都接<strong>天神地下街</strong>，也連地下鐵天神站、天神南站、西鐵福岡（天神）站。下雨不用繞到地面。你們只有 13:00–14:30，選一兩間就好，別想全逛。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>02</span>福岡 PARCO · 年輕潮流</h2>
+      <p>行程原本就寫這間。接地下鐵天神站與西鐵福岡（天神）站，本館＋新館。流行服飾、雜貨、動漫／角色商品比較齊，本館 8 樓常有 KIDDY LAND 這類店。</p>
+      <p>物販大約 10:00–20:30。<a href="https://fukuoka.parco.jp/" target="_blank" rel="noopener">官網</a>。預計 2027 年 2 月底因改建結束營業，這趟 9 月還開著。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>03</span>mina 天神 · 平價一次買齊</h2>
+      <p>在商圈偏北、地下街直結，迅銷集團營運。九州最大級 UNIQLO、LOFT，還有全系列 GU，另有 3COINS、JINS、松本清。要補衣服、雜貨、藥妝，比傳統百貨快。</p>
+      <p>樓層多為 10:00–20:00。<a href="https://mina-tenjin.jp/" target="_blank" rel="noopener">官網</a>。午餐 Ishihara 牛之後，PARCO 與 mina 走路就到，最適合這 90 分鐘。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>04</span>岩田屋本店 · 福岡人的百貨</h2>
+      <p>きらめき通り上的在地老字號，本館＋新館。美妝、服飾、生活雜貨比 PARCO 成熟，地下食品樓層適合挑看起來比較正式的伴手禮、九州銘菓。</p>
+      <p>大約 10:00–20:00。<a href="https://www.iwataya-mitsukoshi.mistore.jp/iwataya.html" target="_blank" rel="noopener">官網</a>。與三越同集團，外國旅客可下載 MITSUKOSHI ISETAN JAPAN App，部分櫃位滿額有 95 折（食品等常不適用）。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>05</span>福岡三越 · 西鐵站上樓就到</h2>
+      <p>跟西鐵福岡（天神）站共構，二樓接車站、三樓是高速巴士中心。傳統日系百貨：服飾、雜貨、家庭向商品。B2 食品街是伴手禮主力，菓遊庵常有各地銘菓。</p>
+      <p><a href="https://mitsukoshi.mistore.jp/store/fukuoka/index.html" target="_blank" rel="noopener">官網</a>。要趕西鐵或買禮盒，比繞去岩田屋省時間。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>06</span>大丸福岡天神店 · 南端精品與食品</h2>
+      <p>渡辺通り最南，接地下鐵七隈線天神南站。本館偏精品、美妝與成熟客層，B2 也是福砂屋、明月堂這類伴手禮。東館（ELGALA）另有生活與年輕品牌。</p>
+      <p><a href="https://www.daimaru.co.jp/fukuoka/" target="_blank" rel="noopener">官網</a>。時間不夠就別從北端 mina 一路走到大丸，會吃掉去 teamLab 的緩衝。</p>
+    </section>
+  </div>
+
+  <div class="visit">
+    <h3>這 90 分鐘怎麼走</h3>
+    <p>午餐後先 PARCO 或 mina，兩間都在北側、離地下鐵天神站近。要伴手禮再下地下街轉岩田屋或三越食品樓。14:30 前回到天神站搭空港線去唐人町。大件留 Day 6 博多／機場再買。</p>
+  </div>
+
+  <div class="sign">Hakata — Yufuin — Dazaifu · 2026 Autumn</div>
+</main>
+
+</body>
+</html>
