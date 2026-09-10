@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>柳川遊船 · 為什麼會有川下り</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+TC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #121b31;
+    --bg-deep: #0c1220;
+    --paper: #f4efdd;
+    --ink: #241e14;
+    --ink-soft: #4a4331;
+    --cream: #e9e2cd;
+    --muted: #8593b3;
+    --gold: #c89b3c;
+    --gold-bright: #e0b95a;
+    --vermillion: #bd4527;
+    --font-display: 'Shippori Mincho', serif;
+    --font-body: 'Noto Sans TC', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --fs-base: 16px;
+    --fs-sm: 14px;
+    --fs-xs: 13px;
+    --fs-2xs: 12px;
+  }
+
+  * { box-sizing: border-box; margin:0; padding:0; }
+
+  body{
+    background: var(--bg);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .hero{
+    position: relative;
+    padding: 36px 24px 32px;
+    text-align:center;
+    background:
+      radial-gradient(ellipse 120% 80% at 50% -10%, rgba(200,155,60,0.16), transparent 60%),
+      linear-gradient(180deg, var(--bg-deep), var(--bg) 70%);
+  }
+  .back{
+    display:inline-block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.12em;
+    color: var(--gold-bright);
+    text-decoration:none;
+    border: 1px solid rgba(200,155,60,0.35);
+    border-radius: 100px;
+    padding: 6px 14px;
+    margin-bottom: 22px;
+  }
+  .back:hover{ background: rgba(200,155,60,0.12); }
+  .hero-eyebrow{
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.32em;
+    color: var(--gold-bright);
+    text-transform: uppercase;
+  }
+  .hero-title{
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(32px, 9vw, 52px);
+    letter-spacing: 0.06em;
+    margin: 14px 0 6px;
+    color: var(--paper);
+  }
+  .hero-title small{
+    display:block;
+    font-size: 0.36em;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    color: var(--gold-bright);
+    margin-top: 10px;
+  }
+  .hero-rule{
+    width: 64px; height: 2px;
+    margin: 22px auto 0;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  main{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 8px 20px 64px;
+  }
+
+  .card{
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 4px;
+    box-shadow: 0 18px 40px -18px rgba(0,0,0,0.55);
+    padding: 28px 24px 8px;
+  }
+
+  .story{
+    margin-bottom: 28px;
+  }
+  .story h2{
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .story h2 span{
+    display:block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--vermillion);
+    margin-bottom: 4px;
+  }
+  .story p{
+    color: var(--ink-soft);
+    font-size: var(--fs-sm);
+    margin-bottom: 10px;
+  }
+
+  .visit{
+    margin-top: 22px;
+    background: #0a0f1c;
+    border: 1px solid rgba(200,155,60,0.3);
+    border-radius: 4px;
+    padding: 16px 18px;
+    font-family: var(--font-mono);
+  }
+  .visit h3{
+    color: var(--gold-bright);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .visit p{
+    font-size: var(--fs-xs);
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .sign{
+    margin-top: 36px;
+    text-align:center;
+    font-family: var(--font-mono);
+    font-size: var(--fs-2xs);
+    letter-spacing: 0.3em;
+    color: #3a5586;
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <a class="back" href="index.html#day2">← 回行程表 · Day 2</a>
+  <div class="hero-eyebrow">Yanagawa Kawakudari</div>
+  <h1 class="hero-title">柳川遊船<small>為什麼會有川下り</small></h1>
+  <div class="hero-rule"></div>
+</header>
+
+<main>
+  <div class="card">
+    <section class="story">
+      <h2><span>01</span>先有水路，才有船</h2>
+      <p>柳川被稱為「水鄉」，不是因為後來想做觀光，而是城下町本來就布滿「掘割」——舊柳川城的護城河，加上灌溉、防水、防火、運貨用的水路。城沒了，水路還在，整座城像被水網住。</p>
+      <p>所以你們坐的不是一般河川遊覽船，比較像沿著舊城堀慢慢划過去。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>02</span>江戶時代：護城河，不是景點</h2>
+      <p>那時候堀裡確實有船。藩主去「御花畠」（現在的御花）會坐船；法令還禁止隨便在外堀蓋水門、船小屋——禁得這麼嚴，表示船本來就不少。</p>
+      <p>但堀是城的防線，能走船的人要經過許可。那時的船是交通與防衛，不是給外人玩的活動。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>03</span>明治之後：生活裡的どんこ船</h2>
+      <p>城廢了，堀變成居民的路。臨堀人家自己有小舟，用來移動、捕魚、讓小孩玩。這種平底小船叫「どんこ船」，船頭用長竿撐，不是用引擎。</p>
+      <p>柳川出身的詩人<strong>北原白秋</strong>回鄉時也會去「川遊び」。對當地人來說，坐船逛堀是日常，還沒有賣票給旅客這回事。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>04</span>一部電影，把川玩變成觀光</h2>
+      <p>1954 年，描寫白秋少年時代的電影《からたちの花》在柳川拍攝、上映。電影裡的川遊び忽然被外面看見，觀光客開始對這座水路城市感興趣。</p>
+      <p>隔年（1955），柳川商工會議所為了把「水鄉」推出去，訂了專用遊覽船，設了從國道橋到沖端的觀光路線——這才是今天「川下り」作為活動的起點。觀光遊船其實只有七十來年，比城堀本身年輕得多。</p>
+    </section>
+
+    <section class="story">
+      <h2><span>05</span>為什麼從松月坐到沖端</h2>
+      <p>1961 年，柳川觀光開發在<strong>松月乗船場</strong>開始營業。松月是明治中期的文人據點，也出現在白秋的詩裡，被視為川下り的原點。</p>
+      <p>內堀路線沿著舊城堀轉彎，約 3 公里、一小時，終點多半是沖端或御花。船頭會撐竿、講故事，有時還唱歌。你們下船在沖端，再走去吃鰻魚，就是這條從護城河變成觀光的路線。</p>
+    </section>
+  </div>
+
+  <div class="visit">
+    <h3>到現場可以留意</h3>
+    <p>松月上船、內堀單程至沖端，約 60 分。低頭過橋時看船頭怎麼用竿點水。下船後步行約 5 分到若松屋抽整理券；若排隊太久，備案是民芸茶屋六騎。</p>
+  </div>
+
+  <div class="sign">Hakata — Yufuin — Dazaifu · 2026 Autumn</div>
+</main>
+
+</body>
+</html>
